@@ -88,7 +88,6 @@ Endpoints para administradores de empresas:
 | GET | `/api/company/users` | Listar todos los usuarios de la empresa |
 | GET | `/api/company/users/{id}` | Obtener información detallada de un usuario |
 | PUT | `/api/company/users/{id}` | Actualizar información de usuario |
-| PATCH | `/api/company/users/{id}/status` | Activar/desactivar usuario |
 | POST | `/api/company/users/{id}/limits` | Asignar límite específico a un usuario |
 | GET | `/api/company/users/{id}/consumption` | Obtener reporte de consumo del usuario |
 
@@ -108,9 +107,9 @@ Endpoints para usuarios finales:
 
 Implementar JWT para autenticación y los siguientes roles con sus respectivos permisos:
 
-1. **ROLE_SPARKY_ADMIN**: Acceso completo a todas las empresas y reportes globales
-2. **ROLE_COMPANY_ADMIN**: Acceso a la gestión de su empresa, restricciones, usuarios y reportes de su empresa
-3. **ROLE_USER**: Acceso a los endpoints de IA según sus límites asignados
+1. **ROLE_SPARKY_ADMIN**: Acceso completo a todas las empresas y reportes globales.
+2. **ROLE_COMPANY_ADMIN**: Acceso a la gestión de su empresa, restricciones, usuarios y reportes de su empresa.
+3. **ROLE_USER**: Acceso a los endpoints de IA según sus límites asignados.
 
 ## Integración con GitHub Models
 
@@ -123,11 +122,11 @@ Utilizar el SDK de GitHub Models para Java. El sistema debe soportar al menos:
 
 ## Gestión de Límites y Rate Limiting
 
-- Implementar limites como "rolling window" (se reinician periódicamente)
+- Implementar limites como "rolling window" (se reinician periódicamente).
 - Soportar diferentes tipos de límites:
-  - Número de solicitudes por ventana de tiempo
-  - Tokens consumidos por ventana de tiempo
-- Rechazar solicitudes que excedan límites e informar de manera apropiada
+  - Número de solicitudes por ventana de tiempo.
+  - Tokens consumidos por ventana de tiempo.
+- Rechazar solicitudes que excedan límites e informar de manera apropiada.
 
 ## Registro de Solicitudes
 
@@ -144,32 +143,26 @@ Para solicitudes multimodales, no guardar los archivos en la base de datos, solo
 ## Testing
 
 Implementar pruebas unitarias con JUnit y Mockito que cubran al menos:
-- Controllers (pruebas de endpoints)
-- Services (lógica de negocio)
-- Repositorios (operaciones CRUD básicas)
-
-## Datos de Ejemplo
-
-Incluir un script que inserte datos iniciales para testing:
-- Super Admin de Sparky
-- Al menos 2 empresas con sus administradores
-- Restricciones de ejemplo para cada empresa
-- Usuarios de prueba con diferentes límites
+- Controllers (pruebas de endpoints).
+- Services (lógica de negocio).
+- Repositorios (operaciones CRUD básicas).
 
 ## Entregables
 
-1. Código fuente completo en repositorio Git
-2. Colección de Postman o similar para probar los endpoints
+1. Código fuente completo en un **repositorio público** de GitHub. 
+2. Colección de Postman para probar los endpoints (esta tiene que estar en formato json en el root del repositorio). 
 
 ## Observaciones Adicionales
 
-- El foco debe estar en la implementación de los endpoints, la lógica de negocio y la estructura de clases
-- Utilizar DTOs para transferir datos entre capas
-- Implementar manejo centralizado de excepciones
+- El foco debe estar en la implementación de los endpoints, la lógica de negocio y la estructura de clases. 
+- Utilizar DTOs para transferir datos entre capas. 
+- Implementar manejo centralizado de excepciones. 
 - Validar todas las entradas del usuario. 
 
 ¡Buena suerte y que gane el mejor equipo!
 
+
 Con mucho cariño desde California,
+
 **Gabriel Romero**  
 ❤️
