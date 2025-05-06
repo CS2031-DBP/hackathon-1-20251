@@ -119,6 +119,7 @@ Utilizar el SDK de GitHub Models para Java. El sistema debe soportar al menos:
 - Un modelo de Meta
 - Un modelo de DeepSpeak
 - Un modelo de OpenAI
+Enlaces: https://github.com/marketplace/models
 
 ## Gestión de Límites y Rate Limiting
 
