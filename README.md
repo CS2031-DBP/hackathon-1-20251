@@ -1,4 +1,4 @@
-# Hackathon #1: Sparky AI System - Backend con Spring Boot
+# Hackathon #1: Sparky AI System
 
 ## Descripción General
 
@@ -7,19 +7,19 @@ Sparky Consulting, una empresa líder en soluciones de software, se enfrenta a u
 Para resolver esto, necesitan desarrollar **Sparky AI System**, un hub centralizado que permita a sus clientes empresariales gestionar el acceso y consumo de diferentes modelos de IA a través de una única plataforma, aprovechando la integración con GitHub Models.
 
 ## Duración y Formato
-- **Tiempo**: 2-3 horas
-- **Equipos**: Grupos de 4 estudiantes
-- **Recursos**: Uso de IA permitido, documentación, internet
+- **Tiempo**: 2-3 horas.
+- **Equipos**: Grupos de 4 o 5 estudiantes.
+- **Recursos**: Uso de IA permitido, documentación y material de Internet.
 
 ## Contexto del Negocio
 
 Sparky AI System funcionará como una plataforma intermediaria que:
 
-1. Registra empresas clientes con sus respectivos administradores
-2. Permite a los administradores de empresas definir qué modelos pueden usar y con qué límites
-3. Gestiona usuarios finales con sus propios límites específicos
-4. Registra y monitorea todas las solicitudes a los modelos de IA
-5. Centraliza la facturación y el control de costos
+1. Registra empresas clientes con sus respectivos administradores. 
+2. Permite a los administradores de empresas definir qué modelos pueden usar y con qué límites. 
+3. Gestiona usuarios finales con sus propios límites específicos. 
+4. Registra y monitorea todas las solicitudes a los modelos de IA. 
+5. Centraliza la facturación y el control de costos. 
 
 ## Requerimientos Técnicos
 
@@ -36,21 +36,21 @@ Sparky AI System funcionará como una plataforma intermediaria que:
 
 El sistema debe modelar las siguientes relaciones sin comprometer las mejores prácticas de POO:
 
-1. **Sparky** mantiene relaciones con múltiples **Empresas**
+1. **Sparky** mantiene relaciones con múltiples **Empresas**. 
 2. Cada **Empresa** tiene:
-   - Un **Administrador** principal
-   - Múltiples **Usuarios**
-   - Varias **Restricciones** a nivel de empresa
+   - Un **Administrador** principal. 
+   - Múltiples **Usuarios**. 
+   - Varias **Restricciones** a nivel de empresa. 
 3. Cada **Usuario** tiene:
-   - Múltiples **Límites** específicos basados en las restricciones de la empresa
-   - Un historial de **Solicitudes** a modelos de IA
-4. Cada **Solicitud** registra información sobre la consulta, respuesta y consumo de recursos
+   - Múltiples **Límites** específicos basados en las restricciones de la empresa. 
+   - Un historial de **Solicitudes** a modelos de IA. 
+4. Cada **Solicitud** registra información sobre la consulta, respuesta y consumo de recursos. 
 
 Las entidades deben considerar al menos los siguientes aspectos:
-- Información de empresa (nombre, RUC, fecha de afiliación, estado activo, etc.)
-- Restricciones por modelo (tipo de modelo, límites de uso, etc.)
-- Límites de usuario (por modelo, ventana de tiempo, límites específicos)
-- Registro detallado de solicitudes (consulta, respuesta, tokens consumidos, etc.)
+- Información de empresa (nombre, RUC, fecha de afiliación, estado activo, etc.). 
+- Restricciones por modelo (tipo de modelo, límites de uso, etc.). 
+- Límites de usuario (por modelo, ventana de tiempo, límites específicos). 
+- Registro detallado de solicitudes (consulta, respuesta, tokens consumidos, etc.). 
 
 ## Funcionalidades Requeridas
 
@@ -119,7 +119,7 @@ Utilizar el SDK de GitHub Models para Java. El sistema debe soportar al menos:
 - Un modelo de Meta
 - Un modelo de DeepSpeak
 - Un modelo de OpenAI
-- Enlaces: https://github.com/marketplace/models
+- Enlace: https://github.com/marketplace/models
 
 ## Gestión de Límites y Rate Limiting
 
@@ -159,26 +159,17 @@ Incluir un script que inserte datos iniciales para testing:
 ## Entregables
 
 1. Código fuente completo en repositorio Git
-2. Archivo README con instrucciones de ejecución
-3. Colección de Postman o similar para probar los endpoints
-
-## Criterios de Evaluación
-
-- **Funcionalidad completa**: Todos los endpoints funcionan correctamente (40%)
-- **Implementación técnica**: Arquitectura, uso de JPA, manejo de excepciones (25%)
-- **Seguridad**: Autenticación, autorización y validación de roles (15%)
-- **Control de límites**: Implementación correcta del rate limiting (10%)
-- **Pruebas**: Calidad y cobertura de las pruebas (10%)
+2. Colección de Postman o similar para probar los endpoints
 
 ## Observaciones Adicionales
 
 - El foco debe estar en la implementación de los endpoints, la lógica de negocio y la estructura de clases
 - Utilizar DTOs para transferir datos entre capas
 - Implementar manejo centralizado de excepciones
-- Validar todas las entradas del usuario
-- Documentar brevemente las decisiones de diseño tomadas
+- Validar todas las entradas del usuario. 
 
 ¡Buena suerte y que gane el mejor equipo!
 
-Un saludo con cariño desde California,
-Gabriel Romero
+Con mucho cariño desde California,
+**Gabriel Romero**  
+❤️
